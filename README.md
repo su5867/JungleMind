@@ -33,7 +33,7 @@ npm run build
 
 Keep the single root `index.html`: Vite uses it as the browser entry that loads the React app. Individual page content and URLs belong in `src/pages/` and the React Router configuration in `src/App.jsx`, rather than separate root HTML files.
 
-Legacy `.html` URLs redirect to their matching routes. The deployment includes Netlify style SPA redirects in `public/_redirects` and Vercel redirects in `vercel.json`; use the matching configuration for the hosting provider. Other static hosts must rewrite app routes to `index.html`.
+Vercel uses `vercel.json` to rewrite app routes to `index.html`, where React Router handles them. Netlify uses the SPA fallback in `public/_redirects`. Other static hosts must rewrite app routes to `index.html` too. Individual `.html` page files are not part of this app.
 
 ## Project layout
 
