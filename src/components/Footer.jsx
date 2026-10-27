@@ -2,6 +2,7 @@ import { Link } from 'react-router';
 import Brand from './Brand.jsx';
 
 const links = [
+  { label: 'Pricing', to: '/pricing' },
   { label: 'Help', to: '/help' },
   { label: 'API', to: '/api' },
   { label: 'Credits', to: '/credits' },

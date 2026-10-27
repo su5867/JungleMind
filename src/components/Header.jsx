@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import Brand from './Brand.jsx';
 
 const links = [
+  { label: 'Pricing', to: '/pricing' },
   { label: 'Help', to: '/help' },
   { label: 'API', to: '/api' },
   { label: 'Credits', to: '/credits' },
@@ -30,6 +31,9 @@ export default function Header({ home = false }) {
 
   return (
     <header className={home ? 'nav' : 'site-header'}>
+      <a className="skip-link" href="#main-content">
+        Skip to content
+      </a>
       <Brand />
       <nav
         id="site-menu"

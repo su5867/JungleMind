@@ -25,6 +25,7 @@ npm run build
 
 - `/` — home
 - `/help` — searchable help center
+- `/pricing` — early access plans and pricing guidance
 - `/api` — developer guide and early access
 - `/credits` — interactive sample usage estimator
 - `/news` — article index

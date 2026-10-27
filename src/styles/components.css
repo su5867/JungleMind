@@ -80,6 +80,22 @@ a {
   justify-self: center;
 }
 
+.skip-link {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 100;
+  padding: 10px 14px;
+  background: #fff;
+  color: #111;
+  border-radius: 7px;
+  transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 .nav__links {
   display: flex;
   align-items: center;

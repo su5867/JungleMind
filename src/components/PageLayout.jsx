@@ -7,7 +7,7 @@ export default function PageLayout() {
   return (
     <div className="inner-page">
       <Header key={location.pathname} />
-      <main>
+      <main id="main-content">
         <Outlet />
       </main>
       <Footer />

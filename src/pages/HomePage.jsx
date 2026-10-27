@@ -65,7 +65,7 @@ export default function HomePage() {
         </div>
         <div className="hero__inner">
           <Header home />
-          <main className="stage">
+          <div className="stage">
             <div className="badge rise" style={{ '--i': 8 }}>
               <span className="badge__tag">Now</span>
               <span>JungleMind 3.0 is here</span>
@@ -89,13 +89,13 @@ export default function HomePage() {
               </span>
               <span>Made for people who make things</span>
             </div>
-          </main>
+          </div>
         </div>
         <a className="scroll-cue" href="#manifesto">
           Scroll to discover <span>{'\u2193'}</span>
         </a>
       </section>
-      <main>
+      <main id="main-content">
         <section className="section section--intro" id="manifesto">
           <div className="section__head">
             <p className="eyebrow">A little more thought goes a long way</p>

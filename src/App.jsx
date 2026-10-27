@@ -8,10 +8,12 @@ const HelpPage = lazy(() => import('./pages/HelpPage.jsx'));
 const HomePage = lazy(() => import('./pages/HomePage.jsx'));
 const JournalPage = lazy(() => import('./pages/JournalPage.jsx'));
 const NewsPage = lazy(() => import('./pages/NewsPage.jsx'));
+const PricingPage = lazy(() => import('./pages/PricingPage.jsx'));
 
 const pageTitles = {
   '/': 'JungleMind — The thinking engine shaped for what counts.',
   '/help': 'Help & answers — JungleMind',
+  '/pricing': 'Plans & pricing — JungleMind',
   '/api': 'JungleMind API — Thoughtful AI, ready to build',
   '/credits': 'Credits & usage — JungleMind',
   '/news': 'Field notes — JungleMind',
@@ -66,6 +68,7 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/index.html" element={<Navigate to="/" replace />} />
           <Route element={<PageLayout />}>
+            <Route path="pricing" element={<PricingPage />} />
             <Route path="help" element={<HelpPage />} />
             <Route path="api" element={<ApiPage />} />
             <Route path="credits" element={<CreditsPage />} />
